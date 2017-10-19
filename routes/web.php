@@ -11,6 +11,11 @@
 |
 */
 
-$router->get('/', function () use ($router) {
-    return $router->app->version();
+$router->get('/', ['uses' => 'MainPageController@index']);
+
+$router->group(['prefix' => 'api'], function ($router) {
+    $router->post('table', 'GameTableController@createTable');
+    $router->get('table/{id}', 'GameTableController@getTable');
+    $router->put('table/{id}', 'GameTableController@updateTable');
+    $router->post('table/{id}', 'GameTableController@updateTable');
 });

@@ -1,0 +1,44 @@
+body {
+    height: 100%;
+    width: 100%;
+    background-color: aliceblue;
+}
+
+.center {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.result .row {
+    margin-top: 5px;
+}
+
+table.game {
+    font-size: 10em;
+}
+
+.square{
+    width:100px;
+    height:100px;
+}
+
+.v{
+    border-left:1px solid #000;
+    border-right:1px solid #000;
+}
+
+.h{
+    border-top:1px solid #000;
+    border-bottom:1px solid #000;
+}
+
+div.game {
+    align-content: center;
+    text-align: center;
+}
+
+div.information_block {
+    border: 1px solid black;
+}
